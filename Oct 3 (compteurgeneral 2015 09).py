@@ -39,7 +39,7 @@ for row in csv.reader(f):
 
 
 # In[5]:
-
+'''
 plt.scatter(gen,pp1)
 plt.xlabel("Generation [kW]")
 plt.ylabel("Power Phase1 [kW]")
@@ -88,12 +88,12 @@ plt.ylabel("Main Circuit Breaker [kW]")
 plt.title('Generation (kW) and Main Circuit Breaker [kW]')
 plt.show()
 #plt.savefig('Generation and Main Circuit Breaker, September 2015.png')
-
+'''
 
 # In[22]:
 
 time_plot = dts.date2num(time)
-plot_date(time_plot, gen)
+plt.plot(time_plot, gen)
 plt.show()
 
 '''
