@@ -5,7 +5,8 @@
 
 get_ipython().magic('matplotlib inline')
 
-import time as t
+import datetime
+import time
 import csv
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,9 +30,12 @@ total = [time, gen, use, pp1, pp2, pp3, ip1, ip2, ip3, mcb]
 
 for row in csv.reader(f):
     n = len(total[0])
-    time.insert(n,t.strptime(row[0], "%Y-%m-%d %H:%M:%S"))
+    time.insert(n,datetime.datetime.strptime(row[0], "%Y-%m-%d %H:%M:%S"))
     for i in range(1, len(total)):
         total[i].insert(n,row[i]);
+        
+#print((time[0]))
+#print(type(time[0]))
 
 
 # In[5]:
