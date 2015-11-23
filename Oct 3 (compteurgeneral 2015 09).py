@@ -3,7 +3,7 @@
 
 # In[18]:
 
-get_ipython().magic('matplotlib inline')
+#get_ipython().magic('matplotlib inline')
 
 import datetime
 import time
@@ -15,7 +15,6 @@ from sklearn import linear_model as lm
 
 
 # In[21]:
-
 f = open("data_compteurgeneral_second_2015_09.csv", "r")
 
 headers = open("Headers_CompteurGeneral.txt", "w")
